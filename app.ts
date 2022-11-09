@@ -4,4 +4,9 @@ let c: string = 'asc'
 let d: boolean = true
 let res: number = revenue + bonus
 
-console.log(res)
+// Functions
+function getFullName(firstname: string, surname: string): string {
+	return `${firstname} ${surname}`
+}
+
+console.log(getFullName('Данил', 'Панарин'))
