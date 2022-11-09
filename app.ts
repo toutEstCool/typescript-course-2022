@@ -5,8 +5,22 @@ let d: boolean = true
 let res: number = revenue + bonus
 
 // Functions
-function getFullName(firstname: string, surname: string): string {
-	return `${firstname} ${surname}`
+function getFullName(userEntity: {
+	firstname: string
+	surname: string
+}): string {
+	return `${userEntity.firstname} ${userEntity.surname}`
 }
 
-console.log(getFullName('Данил', 'Панарин'))
+const user = {
+	firstname: 'Данил',
+	surname: 'Панарин',
+	city: 'Bishkek',
+	age: 26,
+	skills: {
+		dev: true,
+		devops: true,
+	},
+}
+
+console.log(getFullName(user))
