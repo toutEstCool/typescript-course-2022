@@ -1,26 +1,12 @@
-let revenue: number = 1000
-let bonus: number = 500
-let c: string = 'asc'
-let d: boolean = true
-let res: number = revenue + bonus
+const skills: string[] = ['Dev', 'DevOps', 'Testing']
 
-// Functions
-function getFullName(userEntity: {
-	firstname: string
-	surname: string
-}): string {
-	return `${userEntity.firstname} ${userEntity.surname}`
+for (const skill of skills) {
+	console.log(skill);
 }
 
-const user = {
-	firstname: 'Данил',
-	surname: 'Панарин',
-	city: 'Bishkek',
-	age: 26,
-	skills: {
-		dev: true,
-		devops: true,
-	},
-}
 
-console.log(getFullName(user))
+const result = skills
+	.filter((s: string) => s !== 'DevOps')
+	.map(s => s + '! ')
+
+console.log(result)
