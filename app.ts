@@ -1,12 +1,8 @@
-const skills: string[] = ['Dev', 'DevOps', 'Testing']
+const skills: [number, string] = [1, 'Dev']
+const [id, skillName] = skills
 
-for (const skill of skills) {
-	console.log(skill);
-}
+{/* Спредим массив булиан */ }
+const arr: [number, string, ...boolean[]] = [0, 'TypeScript', false]
+console.log(skills)
 
 
-const result = skills
-	.filter((s: string) => s !== 'DevOps')
-	.map(s => s + '! ')
-
-console.log(result)
