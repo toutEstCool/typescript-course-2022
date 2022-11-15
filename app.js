@@ -1,5 +1,8 @@
 "use strict";
-/*{  Lenteral Type }*/
-function fetchWithAuth(url, method) {
-    return 1;
-}
+// Type Aliases
+const user = {
+    name: 'Danil',
+    age: 26,
+    skills: ['1', '2'],
+    id: 2,
+};
